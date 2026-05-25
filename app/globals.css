@@ -1,0 +1,158 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Hyphunt Neo-Brutalist Palette */
+  --background: #000000;
+  --foreground: #CCFF00;
+  --card: #000000;
+  --card-foreground: #CCFF00;
+  --popover: #000000;
+  --popover-foreground: #CCFF00;
+  --primary: #CCFF00;
+  --primary-foreground: #000000;
+  --secondary: #1a1a1a;
+  --secondary-foreground: #CCFF00;
+  --muted: #1a1a1a;
+  --muted-foreground: #666666;
+  --accent: #CCFF00;
+  --accent-foreground: #000000;
+  --destructive: #ff0000;
+  --destructive-foreground: #000000;
+  --border: #CCFF00;
+  --input: #1a1a1a;
+  --ring: #CCFF00;
+  --radius: 0px;
+}
+
+@theme inline {
+  --font-sans: 'Space Mono', monospace;
+  --font-mono: 'Space Mono', monospace;
+  --font-display: 'Ranchers', cursive;
+  --font-headline: 'Anton', sans-serif;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-volt: #CCFF00;
+  --color-matte-black: #000000;
+  --radius-sm: 0px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+  --radius-xl: 8px;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Neo-brutalist utilities */
+.neo-shadow {
+  box-shadow: 8px 8px 0px 0px #CCFF00;
+}
+
+.neo-shadow-black {
+  box-shadow: 8px 8px 0px 0px #000000;
+}
+
+.neo-border {
+  border: 4px solid #000000;
+}
+
+.neo-border-volt {
+  border: 4px solid #CCFF00;
+}
+
+/* Snap animation keyframes */
+@keyframes snap-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes counter-tick {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+@keyframes terminal-blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.animate-snap-in {
+  animation: snap-in 0.15s steps(3, end) forwards;
+}
+
+.animate-snap-in-delay-1 {
+  animation: snap-in 0.15s steps(3, end) 0.1s forwards;
+  opacity: 0;
+}
+
+.animate-snap-in-delay-2 {
+  animation: snap-in 0.15s steps(3, end) 0.2s forwards;
+  opacity: 0;
+}
+
+.animate-snap-in-delay-3 {
+  animation: snap-in 0.15s steps(3, end) 0.3s forwards;
+  opacity: 0;
+}
+
+.animate-snap-in-delay-4 {
+  animation: snap-in 0.15s steps(3, end) 0.4s forwards;
+  opacity: 0;
+}
+
+.animate-counter-tick {
+  animation: counter-tick 0.5s steps(2, end) infinite;
+}
+
+.animate-terminal-blink {
+  animation: terminal-blink 1s steps(2, end) infinite;
+}
+
+/* Tracking utility */
+.tracking-terminal {
+  letter-spacing: 0.1em;
+}
+
+/* Headline drop shadow */
+.headline-shadow {
+  text-shadow: 6px 6px 0px #000000, 8px 8px 0px rgba(204, 255, 0, 0.3);
+}
