@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 import { LiveCounter } from "@/components/live-counter"
 import { WaitlistForm } from "@/components/waitlist-form"
 
@@ -140,6 +141,11 @@ export default function Home() {
             height={28}
             className="h-5 md:h-6 w-auto"
           />
+          <div className="flex flex-wrap justify-center gap-4 md:gap-6 text-[10px] md:text-xs uppercase tracking-terminal font-bold">
+            <Link href="/about" className="text-[#CCFF00]/60 hover:text-[#CCFF00] transition-colors">ABOUT</Link>
+            <Link href="/privacy" className="text-[#CCFF00]/60 hover:text-[#CCFF00] transition-colors">PRIVACY</Link>
+            <Link href="/terms" className="text-[#CCFF00]/60 hover:text-[#CCFF00] transition-colors">TERMS</Link>
+          </div>
           <span className="text-[10px] md:text-xs uppercase tracking-terminal text-[#CCFF00]/50">
             2026 // HYPHUNT_SYSTEMS // ALL_RIGHTS_RESERVED
           </span>
