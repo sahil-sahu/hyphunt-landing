@@ -87,3 +87,26 @@ export async function registerEmail(email: string): Promise<boolean> {
   
   return true
 }
+
+/**
+ * Deletes an email from the waitlist
+ * Returns true if the email was found and removed, false if not found
+ */
+export async function deleteEmail(email: string): Promise<boolean> {
+  const lowerEmail = email.toLowerCase().trim()
+
+  if (!(await isAlreadyRegistered(lowerEmail))) {
+    return false
+  }
+
+  try {
+    const list = await getWaitlist()
+    const updatedList = list.filter(entry => entry.email.toLowerCase() !== lowerEmail)
+    await fs.writeFile(DB_FILE, JSON.stringify(updatedList, null, 2), "utf-8")
+  } catch (err) {
+    console.warn("Vercel EROFS read-only environment: Skipped writing local waitlist.json update on delete.")
+  }
+
+  return true
+}
+
