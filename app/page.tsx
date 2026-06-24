@@ -13,9 +13,9 @@ export default function Home() {
           <Image 
             src="/images/hyphunt-logo.png" 
             alt="Hyphunt" 
-            width={180} 
-            height={48}
-            className="h-10 md:h-12 w-auto"
+            width={240} 
+            height={64}
+            className="h-12 md:h-16 w-auto"
           />
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-4">
@@ -148,9 +148,9 @@ export default function Home() {
           <Image 
             src="/images/hyphunt-logo.png" 
             alt="Hyphunt" 
-            width={140} 
-            height={40}
-            className="h-7 md:h-9 w-auto"
+            width={180} 
+            height={48}
+            className="h-9 md:h-12 w-auto"
           />
           <div className="flex flex-wrap justify-center items-center gap-4 md:gap-6 text-[10px] md:text-xs uppercase tracking-terminal font-bold">
             <Link href="/about" className="text-[#CCFF00]/60 hover:text-[#CCFF00] transition-colors">ABOUT</Link>

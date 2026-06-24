@@ -1,5 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
+import { Instagram, Linkedin } from "lucide-react"
 
 export default function AboutPage() {
   return (
@@ -10,9 +11,9 @@ export default function AboutPage() {
           <Image 
             src="/images/hyphunt-logo.png" 
             alt="Hyphunt" 
-            width={180} 
-            height={48}
-            className="h-10 md:h-12 w-auto hover:opacity-85 transition-opacity"
+            width={240} 
+            height={64}
+            className="h-12 md:h-16 w-auto hover:opacity-85 transition-opacity"
           />
         </Link>
         <Link 
@@ -92,11 +93,18 @@ export default function AboutPage() {
       </section>
 
       {/* Footer */}
-      <footer className="max-w-4xl mx-auto border-t-4 border-[#CCFF00] pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-[10px] md:text-xs uppercase tracking-terminal text-[#CCFF00]/50">
+      <footer className="max-w-4xl mx-auto border-t-4 border-[#CCFF00] pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-[10px] md:text-xs uppercase tracking-terminal text-[#CCFF00]/50 font-bold">
         <span>2026 // HYPHUNT_SYSTEMS</span>
-        <div className="flex gap-4">
+        <div className="flex flex-wrap items-center gap-4 md:gap-6">
           <Link href="/privacy" className="hover:text-[#CCFF00] transition-colors">PRIVACY</Link>
           <Link href="/terms" className="hover:text-[#CCFF00] transition-colors">TERMS</Link>
+          <span className="text-[#CCFF00]/20 hidden sm:inline">|</span>
+          <a href="https://instagram.com/hyphunt" target="_blank" rel="noopener noreferrer" className="hover:text-[#CCFF00] transition-colors flex items-center gap-1">
+            <Instagram className="w-3.5 h-3.5" /> INSTAGRAM
+          </a>
+          <a href="https://linkedin.com/company/hyphunt" target="_blank" rel="noopener noreferrer" className="hover:text-[#CCFF00] transition-colors flex items-center gap-1">
+            <Linkedin className="w-3.5 h-3.5" /> LINKEDIN
+          </a>
         </div>
       </footer>
     </main>
