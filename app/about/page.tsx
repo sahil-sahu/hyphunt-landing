@@ -10,9 +10,9 @@ export default function AboutPage() {
           <Image 
             src="/images/hyphunt-logo.png" 
             alt="Hyphunt" 
-            width={120} 
-            height={32}
-            className="h-6 md:h-8 w-auto hover:opacity-85 transition-opacity"
+            width={180} 
+            height={48}
+            className="h-10 md:h-12 w-auto hover:opacity-85 transition-opacity"
           />
         </Link>
         <Link 

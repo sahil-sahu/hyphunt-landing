@@ -2,31 +2,42 @@ import Image from "next/image"
 import Link from "next/link"
 import { LiveCounter } from "@/components/live-counter"
 import { WaitlistForm } from "@/components/waitlist-form"
+import { Instagram, Linkedin } from "lucide-react"
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#000000] text-[#CCFF00] overflow-x-hidden">
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-[#000000] border-b-4 border-[#CCFF00]">
-        <div className="max-w-6xl mx-auto px-4 md:px-6 h-14 md:h-16 flex items-center justify-between">
+        <div className="max-w-6xl mx-auto px-4 md:px-6 h-16 md:h-20 flex items-center justify-between">
           <Image 
             src="/images/hyphunt-logo.png" 
             alt="Hyphunt" 
-            width={120} 
-            height={32}
-            className="h-6 md:h-8 w-auto"
+            width={180} 
+            height={48}
+            className="h-10 md:h-12 w-auto"
           />
-          <div className="flex items-center gap-2">
-            <div className="w-2 h-2 bg-[#CCFF00] animate-terminal-blink" />
-            <span className="text-[10px] md:text-xs uppercase tracking-terminal hidden sm:inline">
-              SYSTEM_ACTIVE
-            </span>
+          <div className="flex items-center gap-6">
+            <div className="flex items-center gap-4">
+              <a href="https://instagram.com/hyphunt" target="_blank" rel="noopener noreferrer" className="text-[#CCFF00] hover:text-[#FFFFFF] transition-colors" title="Instagram">
+                <Instagram className="w-5 h-5" />
+              </a>
+              <a href="https://linkedin.com/company/hyphunt" target="_blank" rel="noopener noreferrer" className="text-[#CCFF00] hover:text-[#FFFFFF] transition-colors" title="LinkedIn">
+                <Linkedin className="w-5 h-5" />
+              </a>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="w-2 h-2 bg-[#CCFF00] animate-terminal-blink" />
+              <span className="text-[10px] md:text-xs uppercase tracking-terminal hidden sm:inline">
+                SYSTEM_ACTIVE
+              </span>
+            </div>
           </div>
         </div>
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-20 md:pt-24 pb-8 md:pb-12 px-4 md:px-6 min-h-screen flex flex-col">
+      <section className="pt-24 md:pt-28 pb-8 md:pb-12 px-4 md:px-6 min-h-screen flex flex-col">
         <div className="max-w-6xl mx-auto w-full flex-1 flex flex-col">
           {/* Top Row - Badge and Icons */}
           <div className="animate-snap-in flex items-center justify-between mb-6 md:mb-8">
@@ -133,20 +144,27 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="py-6 md:py-8 px-4 md:px-6 border-t-4 border-[#CCFF00] bg-[#000000]">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <Image 
             src="/images/hyphunt-logo.png" 
             alt="Hyphunt" 
-            width={100} 
-            height={28}
-            className="h-5 md:h-6 w-auto"
+            width={140} 
+            height={40}
+            className="h-7 md:h-9 w-auto"
           />
-          <div className="flex flex-wrap justify-center gap-4 md:gap-6 text-[10px] md:text-xs uppercase tracking-terminal font-bold">
+          <div className="flex flex-wrap justify-center items-center gap-4 md:gap-6 text-[10px] md:text-xs uppercase tracking-terminal font-bold">
             <Link href="/about" className="text-[#CCFF00]/60 hover:text-[#CCFF00] transition-colors">ABOUT</Link>
             <Link href="/privacy" className="text-[#CCFF00]/60 hover:text-[#CCFF00] transition-colors">PRIVACY</Link>
             <Link href="/terms" className="text-[#CCFF00]/60 hover:text-[#CCFF00] transition-colors">TERMS</Link>
+            <span className="text-[#CCFF00]/20 hidden sm:inline">|</span>
+            <a href="https://instagram.com/hyphunt" target="_blank" rel="noopener noreferrer" className="text-[#CCFF00]/60 hover:text-[#CCFF00] transition-colors flex items-center gap-1">
+              <Instagram className="w-3.5 h-3.5" /> INSTAGRAM
+            </a>
+            <a href="https://linkedin.com/company/hyphunt" target="_blank" rel="noopener noreferrer" className="text-[#CCFF00]/60 hover:text-[#CCFF00] transition-colors flex items-center gap-1">
+              <Linkedin className="w-3.5 h-3.5" /> LINKEDIN
+            </a>
           </div>
-          <span className="text-[10px] md:text-xs uppercase tracking-terminal text-[#CCFF00]/50">
+          <span className="text-[10px] md:text-xs uppercase tracking-terminal text-[#CCFF00]/50 text-center md:text-right">
             2026 // HYPHUNT_SYSTEMS // ALL_RIGHTS_RESERVED
           </span>
         </div>
