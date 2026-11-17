@@ -38,50 +38,91 @@ export default function TermsPage() {
           TERMS & CONDITIONS
         </h1>
         <p className="font-[family-name:var(--font-space-mono)] text-xs md:text-sm text-[#888888] uppercase tracking-terminal">
-          Last Updated: June 2026 // SYSTEM_STABLE
+          Last Updated: November 2026 // SYSTEM_STABLE
         </p>
       </section>
 
       {/* Terms Content */}
       <section className="max-w-4xl mx-auto mb-20 space-y-8 font-[family-name:var(--font-space-mono)] text-sm leading-relaxed text-[#cccccc]">
         
-        {/* Box 1 */}
         <div className="neo-border border-[#CCFF00] bg-[#0d0d0d] p-6 md:p-8">
           <h2 className="font-[family-name:var(--font-anton)] text-xl md:text-2xl text-[#CCFF00] uppercase tracking-tight mb-4">
-            1. ACCEPTANCE OF CONDITIONS
+            1. ACCEPTANCE
           </h2>
           <p>
-            By accessing this website and entering your credentials into the waitlist system, you agree to comply with and be bound by these Terms & Conditions. If you do not agree, please do not engage with the platform services.
+            By creating an account on, or using, the Hyphunt app or website you agree to these Terms of Use and our Privacy Policy. If you don&apos;t agree, don&apos;t use Hyphunt.
           </p>
         </div>
-
-        {/* Box 2 */}
         <div className="neo-border border-[#CCFF00] bg-[#0d0d0d] p-6 md:p-8">
           <h2 className="font-[family-name:var(--font-anton)] text-xl md:text-2xl text-[#CCFF00] uppercase tracking-tight mb-4">
-            2. ACCESS & ELIGIBILITY
+            2. WHO CAN USE HYPHUNT
           </h2>
           <p>
-            Hyphunt is currently rolling out private beta credentials. Joining the waitlist does not guarantee immediate platform entry or service access. Access keys will be released in batches based on system capacity, queue order, and community needs.
+            You must be at least 13 years old (or the minimum age in your country) to use Hyphunt. You are responsible for your account and everything posted from it.
           </p>
         </div>
-
-        {/* Box 3 */}
         <div className="neo-border border-[#CCFF00] bg-[#0d0d0d] p-6 md:p-8">
           <h2 className="font-[family-name:var(--font-anton)] text-xl md:text-2xl text-[#CCFF00] uppercase tracking-tight mb-4">
-            3. INTELLECTUAL PROPERTY
+            3. YOUR CONTENT
           </h2>
           <p>
-            The branding, layouts, neon graphics, typography configurations, logo designs, and code architectures are the intellectual properties of Hyphunt Systems. Any unauthorized reproduction, scraping, or distribution is prohibited under legal framework regulations.
+            You can post content in Hyphunt, including visit logs, notes, photos, stories, crew chat messages and your profile. You keep ownership of it and give Hyphunt a licence to host and show it inside the service. Only post content you have the right to share.
           </p>
         </div>
-
-        {/* Box 4 */}
         <div className="neo-border border-[#CCFF00] bg-[#0d0d0d] p-6 md:p-8">
           <h2 className="font-[family-name:var(--font-anton)] text-xl md:text-2xl text-[#CCFF00] uppercase tracking-tight mb-4">
-            4. DISCLAIMER & LIABILITY LIMITS
+            4. ZERO TOLERANCE FOR OBJECTIONABLE CONTENT
           </h2>
           <p>
-            The platform is provided "as is" and "as available". We do not warrant that service operations will be uninterrupted or error-free. To the maximum extent permitted by law, Hyphunt shall not be liable for any direct, indirect, or incidental damages resulting from your registration or waitlist participation.
+            Hyphunt has zero tolerance for objectionable content or abusive users. You must not post or send anything that is hateful, harassing, threatening, sexually explicit, violent, illegal, spam, or that impersonates someone or infringes their rights. We filter objectionable language automatically. Breaking these rules gets the content removed and the account suspended or permanently banned without notice.
+          </p>
+        </div>
+        <div className="neo-border border-[#CCFF00] bg-[#0d0d0d] p-6 md:p-8">
+          <h2 className="font-[family-name:var(--font-anton)] text-xl md:text-2xl text-[#CCFF00] uppercase tracking-tight mb-4">
+            5. REPORTING AND BLOCKING
+          </h2>
+          <p>
+            Every message, log, story and profile has a Report option, and you can block any user from their profile or from their content. Blocking hides that person&apos;s content from you and stops them interacting with you. You can unblock people under Settings → Blocked users. We review every report within 24 hours, remove the content if it breaks these terms, and remove the user who posted it.
+          </p>
+        </div>
+        <div className="neo-border border-[#CCFF00] bg-[#0d0d0d] p-6 md:p-8">
+          <h2 className="font-[family-name:var(--font-anton)] text-xl md:text-2xl text-[#CCFF00] uppercase tracking-tight mb-4">
+            6. PLACES AND CREATOR CONTENT
+          </h2>
+          <p>
+            Place information and short videos about places come from public sources such as Google Places and public Instagram posts. Each video is credited to its creator and links to the original. If you created something shown on Hyphunt and want it removed, email info@hyphunt.com and we will take it down promptly.
+          </p>
+        </div>
+        <div className="neo-border border-[#CCFF00] bg-[#0d0d0d] p-6 md:p-8">
+          <h2 className="font-[family-name:var(--font-anton)] text-xl md:text-2xl text-[#CCFF00] uppercase tracking-tight mb-4">
+            7. ACCOUNT DELETION
+          </h2>
+          <p>
+            You can delete your account at any time in the app under Settings → Delete account. This permanently removes your profile and the content and data linked to it.
+          </p>
+        </div>
+        <div className="neo-border border-[#CCFF00] bg-[#0d0d0d] p-6 md:p-8">
+          <h2 className="font-[family-name:var(--font-anton)] text-xl md:text-2xl text-[#CCFF00] uppercase tracking-tight mb-4">
+            8. INTELLECTUAL PROPERTY
+          </h2>
+          <p>
+            The Hyphunt name, logo, design and code belong to Hyphunt. Do not copy, scrape or redistribute them without permission.
+          </p>
+        </div>
+        <div className="neo-border border-[#CCFF00] bg-[#0d0d0d] p-6 md:p-8">
+          <h2 className="font-[family-name:var(--font-anton)] text-xl md:text-2xl text-[#CCFF00] uppercase tracking-tight mb-4">
+            9. DISCLAIMER AND LIABILITY
+          </h2>
+          <p>
+            Hyphunt is provided &quot;as is&quot;. Place details, opening hours and events can change, so check before you go. As far as the law allows, Hyphunt isn&apos;t liable for indirect or incidental damages arising from your use of the service.
+          </p>
+        </div>
+        <div className="neo-border border-[#CCFF00] bg-[#0d0d0d] p-6 md:p-8">
+          <h2 className="font-[family-name:var(--font-anton)] text-xl md:text-2xl text-[#CCFF00] uppercase tracking-tight mb-4">
+            10. CONTACT
+          </h2>
+          <p>
+            Questions or reports: info@hyphunt.com.
           </p>
         </div>
 
